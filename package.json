@@ -1,0 +1,54 @@
+{
+  "name": "fire-open-payments",
+  "version": "1.0.0",
+  "description": "A Node.js package to interact with the Fire.com API, including payment requests, transaction listings, and webhook handling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "FireAPI",
+    "Node.js",
+    "Fire.com API",
+    "Payment Requests",
+    "Access Tokens",
+    "Transactions",
+    "Webhooks",
+    "JWT",
+    "Express.js",
+    "API Integration",
+    "Secure API Communication",
+    "Payment Processing",
+    "Event Notifications",
+    "Idempotency",
+    "API Authentication",
+    "Webhook Handling",
+    "Financial Services API",
+    "Payment Status",
+    "Account Transactions",
+    "JavaScript API",
+    "npm package",
+    "Token Generation",
+    "API Requests",
+    "Server-side Integration",
+    "Payment URL",
+    "Configuration Object",
+    "API Tokens",
+    "Payment Details",
+    "Transaction List",
+    "Webhook Endpoints"
+  ],
+  "author": "Meta Dev Zone",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.7.2",
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0",
+    "nock": "^13.5.4"
+  },
+  "homepage": "git@github.com:metadevzone/fire-open-payments.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:metadevzone/fire-open-payments.git"
+  }
+}
