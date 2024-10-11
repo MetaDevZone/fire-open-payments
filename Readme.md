@@ -20,6 +20,10 @@ To install the package, use npm:
 npm install fire-open-payments
 ```
 
+## Examples
+
+You can find example code in the `example` folder of this package.
+
 ## Usage
 
 ### Importing the Module

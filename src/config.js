@@ -63,9 +63,23 @@ class FireAPI {
         response: error?.response.data.errors,
         error: error?.response?.error,
       });
-      return "";
+      return error
     }
   }
+
+  /**
+   *
+   * @param {*} request_title  - Title of the payment request
+   * @param {*} amount  - Amount to be paid
+   * @param {*} details  - Details of the payment request
+   * @param {*} currency  - Currency code
+   * @param {*} return_url  - URL to redirect after payment
+   * @param {*} fire_account_no  - Account number to receive payment according to currency
+   * @param {*} reference  - Reference number
+   * @param {*} expiry  - Expiry date of the payment request in ISO format
+   * @returns
+   * @description: Create a payment request to fire.com
+   */
 
   async createPaymentRequest(
     request_title,
@@ -113,9 +127,16 @@ class FireAPI {
         response: error?.response.data.errors,
         error: error.response.data.errors,
       });
-      return "";
+      return error
     }
   }
+
+  /**
+   *
+   * @param {*} payment_id - Payment request ID
+   * @returns
+   * @description: Return the payment request details
+   */
 
   async getPaymentRequest(payment_id) {
     if (!this.accessToken) {
@@ -138,9 +159,15 @@ class FireAPI {
         response: error?.response.data.errors,
         error: error?.response?.error,
       });
-      return "";
+      return error
     }
   }
+
+  /**
+   * @param {*} payment_uuid - Payment UUID
+   * @returns
+   * @description: Return the payment request status
+   **/
 
   async getPaymentRequestStatus(payment_uuid) {
     if (!this.accessToken) {
@@ -163,11 +190,17 @@ class FireAPI {
         response: error?.response.data.errors,
         error: error?.response?.error,
       });
-      return "";
+      return error
     }
   }
 
   //List transactions for an account (v1)
+  /**
+   *
+   * @param {*} account_id  - Account ID of the fire account
+   * @returns
+   * @description: Return the list of transactions
+   */
 
   async getTransactions(account_id) {
     if (!this.accessToken) {
@@ -190,7 +223,7 @@ class FireAPI {
         response: error?.response.data.errors,
         error: error?.response?.error,
       });
-      return "";
+      return error
     }
   }
 }
